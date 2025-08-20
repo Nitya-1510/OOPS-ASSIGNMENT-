@@ -1,0 +1,63 @@
+package assignment;
+
+class Course {
+    // instance variables (fields)
+    private String c_name;
+    private String sname;
+    private int s_id;
+    private String i_name;
+    private int i_id;
+
+    // constructor
+    public Course(String c_name, String sname, int s_id, String i_name, int i_id) {
+        this.c_name = c_name;
+        this.sname = sname;
+        this.s_id = s_id;
+        this.i_name = i_name;
+        this.i_id = i_id;
+    }
+
+    // getters
+    public String getsname() {
+        return sname;
+    }
+
+    public String getiname() {
+        return i_name;   // fixed (was iname)
+    }
+
+    public int getsid() {   // return type should be int
+        return s_id;
+    }
+
+    public String getcname() {
+        return c_name;
+    }
+
+    public int getiid() {   // return type should be int
+        return i_id;
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Course c1 = new Course("AI", "Nitya", 1, "AAA", 1);
+        Course c2 = new Course("AI", "Hari", 2, "BBB", 10);
+
+        System.out.println(c1.getsname());
+        System.out.println(c1.getiname());
+        System.out.println(c1.getsid());
+        System.out.println(c1.getcname());
+        System.out.println(c1.getiid());
+        System.out.println("first data is printed");
+
+        System.out.println(c2.getsname());
+        System.out.println(c2.getiname());
+        System.out.println(c2.getsid());
+        System.out.println(c2.getcname());
+        System.out.println(c2.getiid());
+        System.out.println("second data is printed");
+
+        System.out.println("Thank you !! completed by 2117240070214");
+    }
+}
